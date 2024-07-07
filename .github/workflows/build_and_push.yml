@@ -27,5 +27,5 @@ jobs:
         with:
           push: true
           pull: true
-          platform: linux/amd64, darwin
+          platforms: linux/amd64, darwin
           tags: 2cheetah/golang-custom:latest
