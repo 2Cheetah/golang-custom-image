@@ -1,4 +1,4 @@
-FROM golang:1.22-bookworm
+FROM arm64v8/golang:1.22-bookworm
 
 RUN apt-get update
 RUN apt-get install -y zsh tree vim
