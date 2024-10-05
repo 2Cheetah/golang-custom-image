@@ -24,5 +24,7 @@ jobs:
         with:
           push: true
           pull: true
-          platforms: linux/amd64
+          platforms:
+            - linux/amd64
+            - linux/arm64/v8
           tags: 2cheetah/golang-custom:latest
