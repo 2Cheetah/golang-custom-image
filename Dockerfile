@@ -1,4 +1,4 @@
-FROM golang:1.23-bookworm
+FROM golang:1.24-bookworm
 
 RUN apt-get update
 RUN apt-get install -y zsh tree vim bat
