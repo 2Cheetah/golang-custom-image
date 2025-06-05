@@ -3,4 +3,4 @@
 .PHONY: build
 
 build:
-	docker build --pull -t 2cheetah/golang-custom:1-bookworm .
+	docker build --pull -t 2cheetah/golang-custom:1.24-bookworm .
