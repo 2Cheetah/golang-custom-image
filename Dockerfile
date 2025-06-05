@@ -6,5 +6,6 @@ RUN wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.
 RUN sh install.sh --unattended
 RUN chsh -s "/usr/bin/zsh" "root"
 RUN mkdir -p ~/.local/bin && ln -s /usr/bin/batcat ~/.local/bin/bat
-RUN export PATH="$PATH:/root/.local/bin"
 RUN curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/HEAD/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.64.5
+
+ENV PATH="$PATH:/root/.local/bin"
